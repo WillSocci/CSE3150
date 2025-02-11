@@ -1,0 +1,22 @@
+For Lab1 you will need to have the doctest.h available and ready to be used in the same codespace.
+As well as a C++ compiler downloaded.
+You also have to direct the program to the exact file path in order for it to be in effect and the tests to run.
+After doing that you should be ready to run the program!
+
+        ***RUNNING PROGRAM IN TERMINAL***
+    In the terminal below enter:
+$   g++ -o test_lab1 lab1.cpp -std=c++17
+$   ./test_lab1
+
+You should then see in the terminal a bunch of errors from the unit testing, and that means everything is working
+The errors are just the edge cases doing their job, I'm testing a ton of lists that should work and fail for each respective function.
+Some of the lists I used were:
+
+{}              testing for nothing which should return true for both
+{0}             should return true for both
+{-1}            should return true for non_positive, false for non_negative
+{1}             should return true for non_positive, false for non_negative
+{1, -1, 1, -1}  should return true for non_negative, false for non_positive
+{0, -1, 1, -1}  should return true for non_positive, false for non_negative
+etc...          then 5 more similar cases which try to trick the program... all of which did not trick the program!
+
