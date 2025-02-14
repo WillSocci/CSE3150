@@ -1,27 +1,10 @@
-First off, I want to clarify why there are 2 seperate lab files
-I originally (lab2_noUnitTesting.cpp) made a file without the thought of using unit tests to test my code
-so in that file when run using compile:
+This is the updated set of code 
+involving the new instructions
 
-g++ -o lab2 lab2_noUnitTesting.cpp
+In order to compile it use:
 
-to run:
+g++ -o posneg  checkPosNeg.cpp ccCheckPosNeg.cpp
 
-./lab2
+./posneg
 
-It will print with types of information regarding the balanced arrays, and non-negative vs non-positive arrays, along with the proportion and ratio for non-neg and non-pos
-
-THEN realizing that I didn't build it to incorportate the unit testing I adjusted it by seperating each for loop etc. into its own function and then use the unit testing against each function.  I used the week 1 lab for most of the seperate functions seeing it would be most efficient
-
-To compile the second file:
-
-g++ -o lab2Tests lab2.cpp
-
-to run:
-
-./lab2Tests
-
-!!AGAIN TO REITERATE!!
-
-One file runs and prints the information about the trials
-One file runs and runs unit testing
-
+If you are looking for the other files that before the intructions changed...which look for well balanced lists see folder lab2_prechanges

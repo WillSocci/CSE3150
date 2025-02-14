@@ -70,3 +70,7 @@ int main(){
 
     return 0;
 }
+
+100 iterations at 1 = 0
+only worried about the ones that go above and below the line (goes both positive and negative in the same array)
+use a header file for testing
