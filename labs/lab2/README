@@ -1,0 +1,10 @@
+This is the updated lab2 with the new given instructions
+If you are looking for the balanced list functions then go to the lab2_prechanges
+
+Compile instructions:
+
+g++ -o posneg  checkPosNeg.cpp ccCheckPosNeg.cpp
+
+./posneg
+
+
