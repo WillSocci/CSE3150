@@ -1,0 +1,10 @@
+This is my lab3 linked lists lab
+In order to compile it for unit tests:
+
+g++ -o lab3tests unittests.cpp linkedlist.cpp node.cpp
+./lab3tests
+
+To run it using the main.cpp file instead:
+
+g++ -o lab3 main.cpp linkedlist.cpp node.cpp
+./lab3
