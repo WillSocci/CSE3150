@@ -1,10 +1,11 @@
-This is my lab3 linked lists lab
-In order to compile it for unit tests:
+This is my new lab3 based on the new instructions
+If you are looking for the old instructions access the other folder lab3(originaltry)
 
-g++ -o lab3tests unittests.cpp linkedlist.cpp node.cpp
-./lab3tests
+In order to run my tests use this to compile and then
+run my program:
 
-To run it using the main.cpp file instead:
+g++ test.cpp -o tests
+./tests
 
-g++ -o lab3 main.cpp linkedlist.cpp node.cpp
-./lab3
+My tests are testing for everything:
+insert, copy constructor, delete, prefix sums, and the pointer jumper
