@@ -1,0 +1,11 @@
+This is my lab5! I recorded a video of how the tests run and the output for both unit testing and printing!
+
+In order to compile for unit testing:
+
+$ g++ -o tests tests.cpp distance.cpp
+$ ./tests
+
+In order to compile for printing all the distances:
+
+$ g++ -o distance distance.cpp main.cpp
+$ ./distance
