@@ -2,22 +2,33 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <regex>
 
 //opens up the file
 void Tokenizer::loadFromFile(const std::string& filename) {
 
     std::ifstream file(filename);
-    std::string word;
+    std::string line;
     int tokenNum = 0;
 
+    //gets rid of punctuation
+    std::regex word_regex(R"(\b\w+\b)");
+
     //searches through every word and assigns the token if it's been seen already then no need
-    while (file >> word) {
+    while (std::getline(file, line)) {
 
-        if (wordToToken.find(word) == wordToToken.end()) {
+        std::sregex_iterator begin(line.begin(), line.end(), word_regex);
+        std::sregex_iterator end;
 
-            wordToToken[word] = tokenNum;
-            tokenToWord.push_back(word);
-            ++tokenNum;
+        for (std::sregex_iterator i = begin; i != end; ++i) {
+
+            std::string word = i->str();
+
+            if (wordToToken.find(word) == wordToToken.end()) {
+                wordToToken[word] = tokenNum;
+                tokenToWord.push_back(word);
+                ++tokenNum;
+            }
         }
     }
 }

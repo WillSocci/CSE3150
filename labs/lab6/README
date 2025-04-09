@@ -1,11 +1,17 @@
 This is my lab6 code for lab6,  I made it so you can call two functions getToken and getWord.  The code will read through the passage.txt (get-verdict reading)
 then is will seperate each unique word and give it a token (#).  THen the functions read the token and can produce the word and vice versa.
 
+I also implemented regex code that ciphers through the punctuation and produces just alphanumerical characters.
+One of my tests shows that this works:
+I put a comma on the very first word "I," this is not the original text but it will be useful for my needs.
+Video is on husky.
+
 How to compile and run my code for the printing version:
+
+cd labs/lab6
 
 g++ -o token tokenizer.cpp main.cpp
 ./token
-
 
 How to compile and run my code for the testing version:
 
