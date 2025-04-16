@@ -1,0 +1,16 @@
+This is my This is my Lab7!  My first run through of this lab I set my files up how I normally do.
+by having a linking .h file and a functions .cpp file and then 2 seperate main and test .cpp files.
+However I kept running into the issue where it said I had duplicate functions and calling the same thing from different places.
+This was due to the bigint.h file and the way the multiple files interacted with it.  So to fix it I created just a main and test.cpp file
+They both contain the same things and same format except main has a main that prints and the test file tests. SO.....
+
+cd labs/lab7
+
+**********      to compile the printing:    ***********
+g++ main.cpp -o main
+./main
+
+
+**********      to compile tests:           ***********
+g++ unittesting.cpp -o tests
+./tests
