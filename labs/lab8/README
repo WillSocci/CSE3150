@@ -1,0 +1,10 @@
+Here is my lab8. I had trouble witht an issue where my wallets would show up incorrectly and would result in wrong transfer.
+I attempted a few different ways but this way seemed to work well. In order to compile my main and then my tests please see below:
+
+cd labs/lab8
+
+g++ main.cpp NfToken.cpp ManageTokens.cpp ShaMessageDigestHash.cpp -o main -lssl -lcrypto
+./main
+
+g++ test.cpp NfToken.cpp ManageTokens.cpp ShaMessageDigestHash.cpp -o test -lssl -lcrypto
+./test
