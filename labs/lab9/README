@@ -1,0 +1,13 @@
+THis is my lab9 code! I created all the fucntions stated in the instrucitons and then provided
+A main file to print it accordingly and a test file to unit test the code.
+The rest of the answers will be on the google doc!
+
+cd labs/lab9
+
+To compile and run my tests and printing do the following:
+
+g++ test.cpp linkedlist.cpp -o test
+./test
+
+g++ main.cpp linkedlist.cpp -o main
+./main
