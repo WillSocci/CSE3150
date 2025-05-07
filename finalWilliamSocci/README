@@ -1,0 +1,27 @@
+This is my final! All of the instrucitons have been followed.
+My output matches the output in the instructions.
+EXCEPT for my special implementation which instantly deletes the ptr 
+as soon as everything is over using get().  So when cleanup() is run 
+it's already cleanedup!
+
+SO that being said there isn't this in the final line:
+ControlTimedSharedPtr 0x641840d2ceb0 end: 150 ms
+
+But rather this:
+ControlTimedSharedPtr expired already
+
+If however, it isn't fast enough then yes it will print like the pdf
+
+******************************************************************
+
+In order to compile and run my files you need to use this:
+
+cd finalWilliamSocci
+
+to compile printing:
+g++ main.cpp -o main
+./main
+
+to compile unit tests:
+g++ tests.cpp -o tests
+./tests
